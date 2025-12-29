@@ -7,5 +7,14 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    base: './', // Esto es importante para GitHub Pages
+    build: {
+      outDir: 'dist',
+      assetsDir: 'assets',
+      rollupOptions: {
+        input: {
+          main: './index.html'}
+        
+      }}
   ],
 })
