@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    base: './', // Esto es importante para GitHub Pages
+    base: 'https://ciro235.github.io/todo', // Esto es importante para GitHub Pages
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
